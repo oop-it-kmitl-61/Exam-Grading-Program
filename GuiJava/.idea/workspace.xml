@@ -6,7 +6,26 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="240e4057-1096-487b-a46f-b9bc74c251d0" name="Default Changelist" comment="" />
+    <list default="true" id="240e4057-1096-487b-a46f-b9bc74c251d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/BubbleSheetScanner-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../BubbleSheetScanner-master/TexiFyValidator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/GuiJava_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/GuiJava_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuiJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TexiFyGUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/GuiJava_jar/GuiJava.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BubbleSheetScanner-master/SheetScanner/ScanMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BubbleSheetScanner-master/SheetScanner/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BubbleSheetScanner-master/SheetScanner/findQuad$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BubbleSheetScanner-master/SheetScanner/findQuad$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BubbleSheetScanner-master/SheetScanner/findQuad$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BubbleSheetScanner-master/SheetScanner/findQuad$Quadrilateral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BubbleSheetScanner-master/SheetScanner/findQuad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiJava/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiJava/sample/Database.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiJava/sample/Exam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiJava/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiJava/sample/Student.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +108,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545088027222" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545088510826" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BubbleSheetScanner-master/lib/x64" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -110,13 +129,60 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="GuiJava" />
+      <module name="TexiFyGUI" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="TexiFyGUI" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="TexiFyGUI" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,14 +208,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />

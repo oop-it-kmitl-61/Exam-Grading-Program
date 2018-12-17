@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../BubbleSheetScanner-master/BubbleSheetScanner-master.iml" filepath="$PROJECT_DIR$/../BubbleSheetScanner-master/BubbleSheetScanner-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GuiJava.iml" filepath="$PROJECT_DIR$/GuiJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TexiFyGUI.iml" filepath="$PROJECT_DIR$/TexiFyGUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BubbleSheetScanner-master/TexiFyValidator.iml" filepath="$PROJECT_DIR$/../BubbleSheetScanner-master/TexiFyValidator.iml" />
     </modules>
   </component>
 </project>
