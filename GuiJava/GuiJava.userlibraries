@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="jfoenix-9.0.6">
+    <archive path="./src/lib/jfoenix-9.0.6.jar" />
+  </library>
+</eclipse-userlibraries>
+

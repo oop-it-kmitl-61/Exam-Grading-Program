@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="502.0" prefWidth="179.0" style="-fx-background-color: #2b59c3;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" prefHeight="51.0" prefWidth="181.0" text="TexiFy" textFill="#ebd8b8">
+               <font>
+                  <Font name="Calibri" size="43.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="refresh" layoutX="-1.0" layoutY="274.0" onAction="#eventHandler" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: transparent;" text="Refresh" textFill="#ffeecf" />
+            <JFXButton fx:id="validateButton" layoutX="-1.0" layoutY="331.0" onAction="#eventHandler" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: transparent;" text="Validate" textFill="#ffeecf" />
+            <JFXButton fx:id="exportExam" layoutX="-1.0" layoutY="445.0" onAction="#eventHandler" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: transparent;" text="Export exam" textFill="#ffeecf" />
+            <JFXButton fx:id="exportValidated" layoutX="-1.0" layoutY="388.0" onAction="#eventHandler" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: transparent;" text="Export Validated" textFill="#ffeecf" />
+         </children>
+      </Pane>
+      <Pane prefHeight="502.0" prefWidth="585.0" snapToPixel="false">
+         <children>
+            <Pane layoutY="502.0" prefHeight="0.0" prefWidth="585.0" />
+            <TabPane prefHeight="502.0" prefWidth="585.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Exam list">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="240.0" prefWidth="570.0">
+                           <children>
+                              <Pane prefHeight="502.0" prefWidth="585.0" style="-fx-background-color: white;;">
+                                 <children>
+                                    <JFXListView fx:id="examList" layoutX="23.0" layoutY="72.0" prefHeight="317.0" prefWidth="537.0" />
+                                    <Label alignment="CENTER" layoutX="145.0" prefHeight="72.0" prefWidth="294.0" text="Exam List">
+                                       <font>
+                                          <Font size="41.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton fx:id="removeExam" layoutX="372.0" layoutY="415.0" onAction="#importExamHandler" prefHeight="51.0" prefWidth="134.0" style="-fx-background-color: #253c78;" text="Remove Exam" textFill="WHITE" />
+                                    <JFXButton fx:id="importExam" layoutX="78.0" layoutY="415.0" onAction="#importExamHandler" prefHeight="51.0" prefWidth="134.0" style="-fx-background-color: #253c78;" text="Add exam" textFill="#ffeecf" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Student list">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="502.0" prefWidth="585.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <JFXListView fx:id="studentList" layoutX="23.0" layoutY="72.0" prefHeight="317.0" prefWidth="535.0" />
+                                    <Label alignment="CENTER" layoutX="144.0" prefHeight="72.0" prefWidth="294.0" text="Student List">
+                                       <font>
+                                          <Font size="41.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton fx:id="removeStudent" layoutX="371.0" layoutY="415.0" onAction="#importStudentHandler" prefHeight="51.0" prefWidth="134.0" style="-fx-background-color: #253c78;" text="Remove Student" textFill="WHITE" />
+                                    <JFXButton fx:id="importStudent" layoutX="77.0" layoutY="415.0" onAction="#importStudentHandler" prefHeight="51.0" prefWidth="134.0" style="-fx-background-color: #253c78;" text="Add student" textFill="#ffeecf" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Setting">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="475.0" prefWidth="585.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="144.0" layoutY="-1.0" prefHeight="51.0" prefWidth="297.0" style="-fx-alignment: center;" text="Settings" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="38.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="serverIp" layoutX="142.0" layoutY="93.0" prefHeight="26.0" prefWidth="301.0" promptText="DB server ip" text="examvalidatorinstance.cmkn27aztcgy.ap-southeast-1.rds.amazonaws.com" />
+                                    <Label layoutX="2.0" layoutY="90.0" prefHeight="32.0" prefWidth="131.0" text="DB server address" />
+                                    <TextField fx:id="serverUname" layoutX="142.0" layoutY="125.0" prefHeight="26.0" prefWidth="301.0" promptText="root" text="enjoy1818" />
+                                    <Label layoutX="2.0" layoutY="122.0" prefHeight="32.0" prefWidth="131.0" text="DB server username" />
+                                    <Label layoutY="154.0" prefHeight="32.0" prefWidth="131.0" text="DB server password" />
+                                    <PasswordField fx:id="serverPassword" layoutX="142.0" layoutY="157.0" prefHeight="26.0" prefWidth="304.0" promptText="Database Password" text="025521501a" />
+                                    <TextField fx:id="serverSchema" layoutX="140.0" layoutY="189.0" prefHeight="26.0" prefWidth="301.0" promptText="Your database Schema name" text="examvalidation" />
+                                    <Label layoutY="186.0" prefHeight="32.0" prefWidth="131.0" text="DB database name" />
+                                    <JFXButton fx:id="saveSetting" layoutX="230.0" layoutY="238.0" onAction="#eventHandler" prefHeight="32.0" prefWidth="125.0" text="Save" />
+                                    <JFXButton fx:id="testConnection" layoutX="230.0" layoutY="281.0" onAction="#eventHandler" prefHeight="32.0" prefWidth="125.0" text="Test Connection" />
+                                    <JFXButton fx:id="resetValidated" layoutX="228.0" layoutY="324.0" onAction="#eventHandler" prefHeight="32.0" prefWidth="125.0" text="Reset Validated" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</HBox>
