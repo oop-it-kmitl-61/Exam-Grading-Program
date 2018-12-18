@@ -184,12 +184,14 @@ public class Controller implements Initializable {
                     db.connect(this.dbUname, this.dbPassword, this.dbSchema, this.dbAddress);
                     Exam tempExamSheet = db.getExam(tempExam.getExamName(), tempExam.getExamNumber());
                     String StudentAnswer = String.join(",", result);
+                    String tempStringSet = "";
                     int tempScore = 0;
                     char[] tempCharArr = tempExamSheet.getExamSolution().toCharArray();
                     for(int i = 0;i<result.length;i++) {
                         if (Character.toUpperCase(tempCharArr[i]) == Character.toUpperCase(result[i].toString().toCharArray()[0])) {
-                            tempScore += 1;
+                            tempScore +=` ` 1;
                         }
+                        tempStringSet += Character.toUpperCase(result[i].toString().toCharArray()[0]) + ", ";
                     }
 
                     Dialog dialog = new Dialog();
@@ -217,7 +219,7 @@ public class Controller implements Initializable {
 
                     System.out.println(result2.get().toString());
                     if(result2.get().equals(confirmButton)){
-                        boolean test = db.addValidated(tempScore, tempStudent.getStudentID(), tempStudent.getName(), tempExam.getExamName(), tempExam.getExamNumber(), StudentAnswer);
+                        boolean test = db.addValidated(tempScore, tempStudent.getStudentID(), tempStudent.getName(), tempExam.getExamName(), tempExam.getExamNumber(), tempStringSet);
                         if(test){
                             Alert alert = new Alert(Alert.AlertType.INFORMATION);
                             alert.setTitle("Import Status");

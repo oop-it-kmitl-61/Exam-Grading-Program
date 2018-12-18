@@ -18,7 +18,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("mainPage2.fxml"));
         Parent root = loader.load();
-        primaryStage.setTitle("TexiFy");
+        primaryStage.setTitle("Exam Grading Program");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         primaryStage.setResizable(false);

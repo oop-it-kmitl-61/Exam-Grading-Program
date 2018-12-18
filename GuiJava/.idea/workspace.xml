@@ -7,29 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="240e4057-1096-487b-a46f-b9bc74c251d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/test/output/result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/test/output/step_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/test/output/step_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/test/output/step_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/test/outresult.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/test/outstep_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/test/outstep_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BubbleSheetScanner-master/test/outstep_3.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/GuiJava_jar/GuiJava.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/GuiJava_jar/GuiJava.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TexiFyGUI/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TexiFyGUI/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyGUI/sample/mainPage2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TexiFyGUI/sample/mainPage2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyValidator/test/output/result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyValidator/test/output/step_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyValidator/test/output/step_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyValidator/test/output/step_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyValidator/test/outresult.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyValidator/test/outstep_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyValidator/test/outstep_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TexiFyValidator/test/outstep_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TexiFyGUI/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TexiFyGUI/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.png" beforeDir="false" afterPath="$PROJECT_DIR$/result.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/mainPage2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/mainPage2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/outresult.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/output/result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/step_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/step_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/step_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/step_3.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +31,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="340">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="236" column="41" lean-forward="true" selection-start-line="236" selection-start-column="41" selection-end-line="236" selection-end-column="41" />
+            <state relative-caret-position="311">
+              <caret line="196" column="49" lean-forward="true" selection-start-line="196" selection-start-column="49" selection-end-line="196" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-279">
-              <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+            <state relative-caret-position="70">
+              <caret line="191" column="122" selection-start-line="191" selection-start-column="122" selection-end-line="191" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -109,8 +100,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/Database.java" />
         <option value="$PROJECT_DIR$/src/sample/ValidationDialog.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/Database.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
       </list>
     </option>
@@ -176,7 +168,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545137335298" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545139698934" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BubbleSheetScanner-master/lib/x64" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -285,7 +277,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -294,7 +286,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.23076923" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.23076923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,10 +306,27 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/scene/image/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="1098" selection-start-line="1098" selection-end-line="1098" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+        <state relative-caret-position="70">
+          <caret line="191" column="122" selection-start-line="191" selection-start-column="122" selection-end-line="191" selection-end-column="122" />
         </state>
       </provider>
     </entry>
@@ -336,24 +345,10 @@
         <state relative-caret-position="-612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/scene/image/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="1098" selection-start-line="1098" selection-end-line="1098" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="236" column="41" lean-forward="true" selection-start-line="236" selection-start-column="41" selection-end-line="236" selection-end-column="41" />
+        <state relative-caret-position="311">
+          <caret line="196" column="49" lean-forward="true" selection-start-line="196" selection-start-column="49" selection-end-line="196" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
