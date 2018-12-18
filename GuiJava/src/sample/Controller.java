@@ -169,25 +169,20 @@ public class Controller implements Initializable {
                 dialog.setTitle("Confirm Validation");
                 dialog.setHeaderText(tempStudent.getStudentID()+" "+tempStudent.getName()+" is going to be validate.");
 
-                BorderPane bp = new BorderPane();
-                File imgfile = new File("output/result.png");
-                System.out.println(imgfile.getAbsolutePath()+"\n"+imgfile.getPath());
-                Image image = null;
-                try {
-                    image = new Image(imgfile.getCanonicalPath());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                ImageView imgv = new ImageView();
-                imgv.setImage(image);
+//                BorderPane bp = new BorderPane();
+                File imgfile = new File("../BubbleSheetScanner-master/test/output/result.png");
+                System.out.println(imgfile.getAbsolutePath()+"\n"+imgfile.getPath()+" "+imgfile.exists());
+                Image image = new Image("../BubbleSheetScanner-master/test/output/result.png");
+//                ImageView imgv = new ImageView();
+//                imgv.setImage(image);
+//
+//                ButtonType confirmButton = new ButtonType("Confirm", ButtonBar.ButtonData.OK_DONE);
+//                dialog.getDialogPane().getButtonTypes().addAll(confirmButton, ButtonType.CANCEL);
+//                bp.setCenter(imgv);
+//                dialog.getDialogPane().setContent(bp);
+//                Optional result2 = dialog.showAndWait();
 
-                ButtonType confirmButton = new ButtonType("Confirm", ButtonBar.ButtonData.OK_DONE);
-                dialog.getDialogPane().getButtonTypes().addAll(confirmButton, ButtonType.CANCEL);
-                bp.setCenter(imgv);
-                dialog.getDialogPane().setContent(bp);
-                Optional result2 = dialog.showAndWait();
-
-                System.out.println(result2.get().toString());
+//                System.out.println(result2.get().toString());
 //              vvvvv  Validate here vvvvv
 //                FileChooser fileChooser = new FileChooser();
 //                fileChooser.getExtensionFilters().addAll(
