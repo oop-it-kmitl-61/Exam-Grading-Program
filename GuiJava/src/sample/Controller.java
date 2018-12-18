@@ -189,7 +189,7 @@ public class Controller implements Initializable {
                     char[] tempCharArr = tempExamSheet.getExamSolution().toCharArray();
                     for(int i = 0;i<result.length;i++) {
                         if (Character.toUpperCase(tempCharArr[i]) == Character.toUpperCase(result[i].toString().toCharArray()[0])) {
-                            tempScore +=` ` 1;
+                            tempScore += 1;
                         }
                         tempStringSet += Character.toUpperCase(result[i].toString().toCharArray()[0]) + ", ";
                     }
