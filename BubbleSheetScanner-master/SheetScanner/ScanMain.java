@@ -10,7 +10,10 @@ public class ScanMain {
 
     static {
 
-        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+        try{
+            File file = new File(Core.NATIVE_LIBRARY_NAME);
+            System.load(file.getAbsolutePath()+".dll");
+        }catch (Exception ex){}
     }
 
     public static void main(String[] args) throws Exception {

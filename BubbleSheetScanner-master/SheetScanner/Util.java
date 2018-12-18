@@ -8,7 +8,7 @@ import static org.opencv.imgcodecs.Imgcodecs.imwrite;
 
 public class Util {
 
-    public static String input_folder = "E:/BubbleSheetScanner-master/test/input";
+    public static String input_folder = "./";
     public static String output_folder = "./";
     public static String tags_folder = "markers/";
     public static String getInput(String name){

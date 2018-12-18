@@ -9,11 +9,16 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.opencv.core.Core;
 
+import java.io.File;
+
 public class Main extends Application {
 
     static {
 
-        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+        try{
+            File file = new File(Core.NATIVE_LIBRARY_NAME);
+            System.load(file.getAbsolutePath()+".dll");
+        }catch (Exception ex){}
     }
 
     public static Stage primaryStage;
