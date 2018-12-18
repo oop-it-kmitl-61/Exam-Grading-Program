@@ -14,6 +14,10 @@
     ```Javaw หรือ Java -jar EGP.jar```
 #### 3.) จากนั้นใส่ข้อมูลเกี่ยวกับ Database แล้วกด test connection เป็นอันเสร็จสิ้น
 
+# Resource
+---
+https://drive.google.com/drive/folders/1fTRg0qNUb_9q0i5WfNV1vOrNHEkPjBtY
+
 
 # รายชื่อ Library ที่ใช้ทั้งหมด
 ---
