@@ -8,14 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="240e4057-1096-487b-a46f-b9bc74c251d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TexiFyGUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TexiFyGUI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/GuiJava_jar/GuiJava.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.png" beforeDir="false" afterPath="$PROJECT_DIR$/result.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/step_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/step_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/step_3.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -175,9 +167,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545141450893" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545141828771" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/x64" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>

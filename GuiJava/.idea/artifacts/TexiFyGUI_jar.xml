@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TexiFyGUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TexiFyGUI_jar</output-path>
+    <root id="archive" name="TexiFyGUI.jar">
+      <element id="module-output" name="TexiFyGUI" />
+      <element id="module-output" name="TexiFyValidator" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../BubbleSheetScanner-master/lib/opencv-343.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/mysql-connector-java-8.0.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/jfoenix-9.0.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/opencv-343.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
