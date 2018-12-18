@@ -6,20 +6,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="482.0" style="-fx-background-color: #2b59c3;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <JFXTextField fx:id="examAnswer" layoutX="132.0" layoutY="139.0" prefHeight="25.0" prefWidth="339.0" />
-      <Label alignment="CENTER" layoutY="152.0" prefHeight="25.0" prefWidth="132.0" text="คำตอบ(20ตัวอักษร)" />
-      <Label alignment="CENTER" layoutY="114.0" prefHeight="25.0" prefWidth="132.0" text="ชื่อข้อสอบ" />
-      <JFXTextField fx:id="examName" layoutX="132.0" layoutY="101.0" prefHeight="25.0" prefWidth="339.0" />
-      <Label alignment="CENTER" layoutY="69.0" prefHeight="25.0" prefWidth="132.0" text="ชุดข้อสอบ" />
-      <JFXTextField fx:id="examNumber" layoutX="132.0" layoutY="56.0" prefHeight="25.0" prefWidth="339.0" />
-      <Label alignment="CENTER" layoutX="72.0" prefHeight="54.0" prefWidth="339.0" text="ใส่ข้อมูลข้อสอบ">
+      <JFXTextField fx:id="examAnswer" focusColor="#253c78" layoutX="132.0" layoutY="139.0" prefHeight="25.0" prefWidth="339.0" unFocusColor="#fff2f2" />
+      <Label alignment="CENTER" layoutY="152.0" prefHeight="25.0" prefWidth="132.0" text="คำตอบ(20ตัวอักษร)" textFill="WHITE" />
+      <Label alignment="CENTER" layoutY="114.0" prefHeight="25.0" prefWidth="132.0" text="ชื่อข้อสอบ" textFill="WHITE" />
+      <JFXTextField fx:id="examName" focusColor="#253c78" layoutX="132.0" layoutY="101.0" prefHeight="25.0" prefWidth="339.0" unFocusColor="WHITE" />
+      <Label alignment="CENTER" layoutY="69.0" prefHeight="25.0" prefWidth="132.0" text="ชุดข้อสอบ" textFill="WHITE" />
+      <JFXTextField fx:id="examNumber" focusColor="#253c78" layoutX="132.0" layoutY="56.0" prefHeight="25.0" prefWidth="339.0" unFocusColor="WHITE" />
+      <Label alignment="CENTER" layoutX="72.0" prefHeight="54.0" prefWidth="339.0" text="ใส่ข้อมูลข้อสอบ" textFill="WHITE">
          <font>
             <Font size="32.0" />
          </font>
       </Label>
-      <JFXButton fx:id="confirmImportExam" layoutX="175.0" layoutY="177.0" onAction="#importExamHandler" prefHeight="44.0" prefWidth="132.0" text="Submit" />
+      <JFXButton fx:id="confirmImportExam" layoutX="175.0" layoutY="177.0" onAction="#importExamHandler" prefHeight="44.0" prefWidth="132.0" text="Submit" textFill="WHITE" />
    </children>
 </Pane>
