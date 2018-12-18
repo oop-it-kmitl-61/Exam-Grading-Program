@@ -89,10 +89,6 @@ public class Database {
             return true;
         }
     }
-
-    public boolean addStudent(){
-       return false;
-    }
     public ArrayList<Student> getAllStudent(){
         ArrayList<Student> students = new ArrayList<>();
         try {

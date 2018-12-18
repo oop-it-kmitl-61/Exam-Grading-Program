@@ -10,18 +10,27 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.PasswordField;
+import javafx.scene.control.*;
+import javafx.scene.control.Dialog;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import javax.imageio.ImageIO;
+import javax.swing.text.html.Option;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 
@@ -147,6 +156,8 @@ public class Controller implements Initializable {
                 alert.showAndWait();
             }
             else{
+
+
                 String[] result = new String[20];
                 int studentValidateIndex = studentList.getSelectionModel().getSelectedIndex();
                 Student tempStudent = studentArrayList.get(studentValidateIndex);
@@ -154,46 +165,71 @@ public class Controller implements Initializable {
                 Exam tempExam = examArrayList.get(examValidateIndex);
                 System.out.println(tempStudent.getName()+" "+tempStudent.getStudentID());
                 System.out.println(tempExam.getExamName()+" "+tempExam.getExamNumber());
-//              vvvvv  Validate here vvvvv
-                FileChooser fileChooser = new FileChooser();
-                fileChooser.getExtensionFilters().addAll(
-                        new FileChooser.ExtensionFilter("*All file", "*.*"),
-                        new FileChooser.ExtensionFilter("*.JPEG", "*.jpeg"),
-                        new FileChooser.ExtensionFilter("*.PNG", "*.png*"),
-                        new FileChooser.ExtensionFilter("*.JPG", "*.jpg"));
-                File fileOpener =fileChooser.showOpenDialog(primaryStage);
-                if(fileOpener != null){
+                Dialog dialog = new Dialog();
+                dialog.setTitle("Confirm Validation");
+                dialog.setHeaderText(tempStudent.getStudentID()+" "+tempStudent.getName()+" is going to be validate.");
 
-                    ScanMain validater = new ScanMain();
-                    result = validater.validate(fileOpener);
-                    Database db = new Database();
-                    db.connect(this.dbUname, this.dbPassword, this.dbSchema, this.dbAddress);
-                    Exam tempExamSheet = db.getExam(tempExam.getExamName(), tempExam.getExamNumber());
-                    String StudentAnswer = String.join(",", result);
-                    int tempScore = 0;
-                    char[] tempCharArr = tempExamSheet.getExamSolution().toCharArray();
-                    for(int i = 0;i<result.length;i++){
-                        if(Character.toUpperCase(tempCharArr[i]) == Character.toUpperCase(result[i].toString().toCharArray()[0])){
-                            tempScore += 1;
-                        }
-                    }
-                    boolean test = db.addValidated(tempScore, tempStudent.getStudentID(), tempStudent.getName(), tempExam.getExamName(), tempExam.getExamNumber(), StudentAnswer);
-                    if(test){
-                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                        alert.setTitle("Import Status");
-                        alert.setHeaderText("Validate Success!!!!");
-                        alert.setContentText(null);
-                        alert.showAndWait();
-                    }else {
-                        Alert alert = new Alert(Alert.AlertType.ERROR);
-                        alert.setTitle("Import Status");
-                        alert.setHeaderText("Validate Failed!!!!\nDuplicate Validation.");
-                        alert.setContentText(null);
-                        alert.showAndWait();
-                    }
-                    db.closeConnection();
+                BorderPane bp = new BorderPane();
+                File imgfile = new File("output/result.png");
+                System.out.println(imgfile.getAbsolutePath()+"\n"+imgfile.getPath());
+                Image image = null;
+                try {
+                    image = new Image(imgfile.getCanonicalPath());
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-//              ^^^^^  Validate here ^^^^^
+                ImageView imgv = new ImageView();
+                imgv.setImage(image);
+
+                ButtonType confirmButton = new ButtonType("Confirm", ButtonBar.ButtonData.OK_DONE);
+                dialog.getDialogPane().getButtonTypes().addAll(confirmButton, ButtonType.CANCEL);
+                bp.setCenter(imgv);
+                dialog.getDialogPane().setContent(bp);
+                Optional result2 = dialog.showAndWait();
+
+                System.out.println(result2.get().toString());
+//              vvvvv  Validate here vvvvv
+//                FileChooser fileChooser = new FileChooser();
+//                fileChooser.getExtensionFilters().addAll(
+//                        new FileChooser.ExtensionFilter("*All file", "*.*"),
+//                        new FileChooser.ExtensionFilter("*.JPEG", "*.jpeg"),
+//                        new FileChooser.ExtensionFilter("*.PNG", "*.png*"),
+//                        new FileChooser.ExtensionFilter("*.JPG", "*.jpg"));
+//                File fileOpener =fileChooser.showOpenDialog(primaryStage);
+//                if(fileOpener != null){
+//
+//                    ScanMain validater = new ScanMain();
+//                    result = validater.validate(fileOpener);
+//                    Database db = new Database();
+//                    db.connect(this.dbUname, this.dbPassword, this.dbSchema, this.dbAddress);
+//                    Exam tempExamSheet = db.getExam(tempExam.getExamName(), tempExam.getExamNumber());
+//                    String StudentAnswer = String.join(",", result);
+//                    int tempScore = 0;
+//                    char[] tempCharArr = tempExamSheet.getExamSolution().toCharArray();
+//                    for(int i = 0;i<result.length;i++) {
+//                        if (Character.toUpperCase(tempCharArr[i]) == Character.toUpperCase(result[i].toString().toCharArray()[0])) {
+//                            tempScore += 1;
+//                        }
+//                    }
+//                    boolean test = db.addValidated(tempScore, tempStudent.getStudentID(), tempStudent.getName(), tempExam.getExamName(), tempExam.getExamNumber(), StudentAnswer);
+//                    if(test){
+//                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//                        alert.setTitle("Import Status");
+//                        alert.setHeaderText("Validate Success!!!!");
+//                        alert.setContentText(null);
+//                        alert.showAndWait();
+//
+//
+//                    }else {
+//                        Alert alert = new Alert(Alert.AlertType.ERROR);
+//                        alert.setTitle("Import Status");
+//                        alert.setHeaderText("Validate Failed!!!!\nDuplicate Validation.");
+//                        alert.setContentText(null);
+//                        alert.showAndWait();
+//                    }
+//                    db.closeConnection();
+//                }
+////              ^^^^^  Validate here ^^^^^
             }
         }else if(event.getSource().equals(exportExam)){
             FileChooser fileChooser = new FileChooser();
@@ -279,7 +315,6 @@ public class Controller implements Initializable {
                 alert.showAndWait();
             }
             else{
-//                System.out.println(this.dbUname+" "+this.dbPassword);
                 Database db = new Database();
                 db.connect(this.dbUname, this.dbPassword, this.dbSchema, this.dbAddress);
                 System.out.println(db.getConnect());
