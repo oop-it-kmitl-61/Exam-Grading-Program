@@ -30,13 +30,13 @@
       <Pane prefHeight="502.0" prefWidth="585.0" snapToPixel="false">
          <children>
             <Pane layoutY="502.0" prefHeight="0.0" prefWidth="585.0" />
-            <TabPane prefHeight="502.0" prefWidth="585.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane prefHeight="502.0" prefWidth="585.0" style="-fx-background-color: white;;" tabClosingPolicy="UNAVAILABLE">
               <tabs>
                 <Tab text="Exam list">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="240.0" prefWidth="570.0">
                            <children>
-                              <Pane prefHeight="502.0" prefWidth="585.0" style="-fx-background-color: white;;">
+                              <Pane prefHeight="502.0" prefWidth="585.0" style="-fx-background-color: ffeecf;">
                                  <children>
                                     <JFXListView fx:id="examList" layoutX="23.0" layoutY="72.0" prefHeight="317.0" prefWidth="537.0" />
                                     <Label alignment="CENTER" layoutX="145.0" prefHeight="72.0" prefWidth="294.0" text="Exam List">
@@ -56,7 +56,7 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Pane prefHeight="502.0" prefWidth="585.0" style="-fx-background-color: white;">
+                              <Pane prefHeight="502.0" prefWidth="585.0" style="-fx-background-color: #ffeecf;">
                                  <children>
                                     <JFXListView fx:id="studentList" layoutX="23.0" layoutY="72.0" prefHeight="317.0" prefWidth="535.0" />
                                     <Label alignment="CENTER" layoutX="144.0" prefHeight="72.0" prefWidth="294.0" text="Student List">
@@ -76,20 +76,20 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Pane prefHeight="475.0" prefWidth="585.0" style="-fx-background-color: white;">
+                              <Pane prefHeight="475.0" prefWidth="585.0" style="-fx-background-color: #ffeecf;">
                                  <children>
                                     <Label contentDisplay="CENTER" layoutX="144.0" layoutY="-1.0" prefHeight="51.0" prefWidth="297.0" style="-fx-alignment: center;" text="Settings" textAlignment="CENTER">
                                        <font>
                                           <Font size="38.0" />
                                        </font>
                                     </Label>
-                                    <TextField fx:id="serverIp" layoutX="142.0" layoutY="93.0" prefHeight="26.0" prefWidth="301.0" promptText="DB server ip" text="examvalidatorinstance.cmkn27aztcgy.ap-southeast-1.rds.amazonaws.com" />
+                                    <TextField fx:id="serverIp" layoutX="142.0" layoutY="93.0" prefHeight="26.0" prefWidth="301.0" promptText="DB server ip" />
                                     <Label layoutX="2.0" layoutY="90.0" prefHeight="32.0" prefWidth="131.0" text="DB server address" />
-                                    <TextField fx:id="serverUname" layoutX="142.0" layoutY="125.0" prefHeight="26.0" prefWidth="301.0" promptText="root" text="enjoy1818" />
+                                    <TextField fx:id="serverUname" layoutX="142.0" layoutY="125.0" prefHeight="26.0" prefWidth="301.0" promptText="root" />
                                     <Label layoutX="2.0" layoutY="122.0" prefHeight="32.0" prefWidth="131.0" text="DB server username" />
                                     <Label layoutY="154.0" prefHeight="32.0" prefWidth="131.0" text="DB server password" />
-                                    <PasswordField fx:id="serverPassword" layoutX="142.0" layoutY="157.0" prefHeight="26.0" prefWidth="304.0" promptText="Database Password" text="025521501a" />
-                                    <TextField fx:id="serverSchema" layoutX="140.0" layoutY="189.0" prefHeight="26.0" prefWidth="301.0" promptText="Your database Schema name" text="examvalidation" />
+                                    <PasswordField fx:id="serverPassword" layoutX="142.0" layoutY="157.0" prefHeight="26.0" prefWidth="304.0" promptText="Database Password" />
+                                    <TextField fx:id="serverSchema" layoutX="140.0" layoutY="189.0" prefHeight="26.0" prefWidth="301.0" promptText="Your database Schema name" />
                                     <Label layoutY="186.0" prefHeight="32.0" prefWidth="131.0" text="DB database name" />
                                     <JFXButton fx:id="saveSetting" layoutX="230.0" layoutY="238.0" onAction="#eventHandler" prefHeight="32.0" prefWidth="125.0" text="Save" />
                                     <JFXButton fx:id="testConnection" layoutX="230.0" layoutY="281.0" onAction="#eventHandler" prefHeight="32.0" prefWidth="125.0" text="Test Connection" />
